@@ -1,0 +1,190 @@
+.page { padding: 28px; animation: fadeIn 0.3s ease; }
+
+.tag { font-family: var(--font-mono); font-size: 11px; color: var(--red-core); letter-spacing: 0.08em; margin-bottom: 4px; }
+.title { font-size: 26px; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: 24px; }
+
+.header { margin-bottom: 24px; }
+
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.panelTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+}
+
+.refreshBtn {
+  margin-left: auto;
+  color: var(--text-muted);
+  padding: 3px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+.refreshBtn:hover { color: var(--red-text); }
+
+.field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+.field label { font-size: 11px; color: var(--text-muted); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.field input { width: 100%; }
+
+.twoFields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.checkGroup {
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 4px;
+}
+
+.checkGroupTitle {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 10px;
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.checkRow input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--red-core);
+  padding: 0;
+  border-radius: 2px;
+}
+
+.sevCheckList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.sevCheck {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.sevCheck input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  accent-color: var(--red-core);
+  padding: 0;
+}
+
+.generateBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 18px;
+  padding: 11px;
+  background: var(--red-core);
+  color: white;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid var(--red-core);
+  transition: background 0.15s;
+}
+
+.generateBtn:hover:not(:disabled) { background: #dc2626; }
+.generateBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.spin { animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading, .empty {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 20px 0;
+}
+
+.reportList { display: flex; flex-direction: column; gap: 8px; }
+
+.reportRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px 14px;
+  transition: border-color 0.15s;
+}
+
+.reportRow:hover { border-color: var(--border-bright); }
+
+.reportInfo { flex: 1; min-width: 0; }
+
+.reportName {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reportMeta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--border-bright);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+
+.downloadBtn:hover {
+  border-color: var(--red-core);
+  color: var(--red-text);
+}

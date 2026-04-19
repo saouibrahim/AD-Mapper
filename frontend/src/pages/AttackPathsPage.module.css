@@ -1,0 +1,187 @@
+.page { padding: 28px; animation: fadeIn 0.3s ease; }
+
+.tag { font-family: var(--font-mono); font-size: 11px; color: var(--red-core); letter-spacing: 0.08em; margin-bottom: 4px; }
+.title { font-size: 26px; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.controls { display: flex; align-items: center; gap: 10px; }
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.iconBtn {
+  padding: 7px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  transition: all 0.15s;
+}
+.iconBtn:hover { border-color: var(--red-core); color: var(--red-text); }
+
+.loading, .empty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 40px 0;
+}
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sev_critique { border-left: 3px solid var(--sev-critique); }
+.sev_haute    { border-left: 3px solid var(--sev-haute); }
+.sev_moyenne  { border-left: 3px solid var(--sev-moyenne); }
+.sev_basse    { border-left: 3px solid var(--sev-basse); }
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  gap: 12px;
+}
+
+.cardLeft { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+.cardRight { display: flex; align-items: center; gap: 12px; flex-shrink: 0; color: var(--text-muted); font-size: 11px; }
+
+.cardTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.likelihood { font-family: var(--font-mono); font-size: 10px; }
+
+.cardBody {
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+.desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.nodePath {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 16px;
+  background: #050508;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.pathItem { display: flex; align-items: center; gap: 4px; }
+
+.pathNode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 10px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-bright);
+  border-radius: 4px;
+}
+
+.nodeType { font-family: var(--font-mono); font-size: 9px; color: var(--red-core); text-transform: uppercase; }
+.nodeLabel { font-family: var(--font-mono); font-size: 11px; color: var(--text-primary); }
+
+.pathArrow { color: var(--text-muted); }
+
+.stepsWrap { margin-bottom: 14px; }
+
+.stepsTitle {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 8px;
+}
+
+.steps { display: flex; flex-direction: column; gap: 6px; }
+
+.step {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.stepNum {
+  background: var(--red-dim);
+  color: var(--red-text);
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.impactRow { margin-top: 4px; }
+
+.impactBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(239,68,68,0.07);
+  border: 1px solid rgba(239,68,68,0.2);
+  border-radius: 4px;
+}
+
+.impactLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--red-core);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.impactVal { font-size: 12px; color: var(--text-secondary); }

@@ -1,0 +1,186 @@
+.page { padding: 28px; animation: fadeIn 0.3s ease; }
+
+.tag { font-family: var(--font-mono); font-size: 11px; color: var(--red-core); letter-spacing: 0.08em; margin-bottom: 4px; }
+.title { font-size: 26px; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.controls { display: flex; align-items: center; gap: 10px; }
+
+.filters { display: flex; gap: 4px; }
+
+.filterBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.15s;
+}
+.filterBtn:hover { border-color: var(--border-bright); color: var(--text-secondary); }
+.filterBtn.active { border-color: var(--red-core); color: var(--red-text); background: var(--red-glow); }
+
+.filterCount {
+  background: var(--bg-hover);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 10px;
+}
+
+.iconBtn {
+  padding: 7px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  transition: all 0.15s;
+}
+.iconBtn:hover { border-color: var(--red-core); color: var(--red-text); }
+
+.loading, .empty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 40px 0;
+}
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.card:hover { border-color: var(--border-bright); }
+
+.sev_critique { border-left: 3px solid var(--sev-critique); }
+.sev_haute    { border-left: 3px solid var(--sev-haute); }
+.sev_moyenne  { border-left: 3px solid var(--sev-moyenne); }
+.sev_basse    { border-left: 3px solid var(--sev-basse); }
+.sev_info     { border-left: 3px solid var(--sev-info); }
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  cursor: pointer;
+  gap: 12px;
+}
+
+.cardLeft { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+.cardRight { display: flex; align-items: center; gap: 10px; flex-shrink: 0; color: var(--text-muted); }
+
+.cardTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cvss {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.cardId {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.cardBody {
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+.desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.section { margin-bottom: 12px; }
+
+.sectionTitle {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 6px;
+}
+
+.tagList { display: flex; flex-wrap: wrap; gap: 5px; }
+
+.objTag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 2px 7px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-bright);
+  border-radius: 3px;
+  color: var(--text-secondary);
+}
+
+.evidence {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: #050508;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.evidRow { display: flex; gap: 12px; font-family: var(--font-mono); font-size: 11px; }
+.evidKey { color: var(--red-text); min-width: 120px; }
+.evidVal { color: var(--text-secondary); }
+
+.recommendation {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: rgba(239,68,68,0.05);
+  border: 1px solid rgba(239,68,68,0.15);
+  border-radius: 4px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+
+.recLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--red-core);
+  display: block;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
