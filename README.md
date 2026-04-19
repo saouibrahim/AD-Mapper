@@ -1,6 +1,6 @@
 # AD Recon & Attack Path Mapper
 
-Outil Red Team complet pour l'énumération Active Directory, la détection de mauvaises configurations, la visualisation des chemins d'attaque et la génération de rapports PDF.
+Outil complet pour l'énumération Active Directory, la détection de mauvaises configurations, la visualisation des chemins d'attaque et la génération de rapports PDF.
 
 ## Stack technique
 
